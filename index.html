@@ -118,53 +118,401 @@
   </div>
 </section>
 
-<!-- Agentic PMO -->
+<!-- Agentic PMO — Expanded Section -->
 <section class="section section-cream" id="agentic-pmo">
-  <div class="container">
-    <span class="eyebrow text-center">Capability</span>
-    <h2 class="section-title text-center">Agentic PMO</h2>
-    <p class="section-subtitle text-center" style="max-width: 650px; margin-left: auto; margin-right: auto;">
-      A structured delivery framework that combines AI-native maturity assessment, multi-domain project management, and agent-driven execution — enabling organisations to move from strategy to measurable outcomes.
-    </p>
+<div class="container">
+<span class="eyebrow text-center">Capability</span>
+<h2 class="section-title text-center">Agentic PMO</h2>
+<p class="section-subtitle text-center" style="max-width: 650px; margin-left: auto; margin-right: auto;">
+  AI agents that plan, monitor, and alert — turning strategy into governed execution. Smaller teams, smarter delivery, across any industry.
+</p>
 
-    <div class="card-grid card-grid-2" style="margin-top: 1rem;">
-      <div class="card">
-        <div class="card-icon">📋</div>
-        <h3>What It Is</h3>
-        <p>
-          Agentic PMO is a domain-based service delivery architecture built on an AI-native maturity foundation. It deploys structured project packs — domain packs — across up to 10 sectors including manufacturing, governance, financial services, healthcare, education, energy, supply chain, smart cities, professional services, and defence. Each pack follows a three-phase lifecycle: Assess → Build → Deploy.
-        </p>
+<!-- The Problem -->
+<div class="section-subnav">
+  <a href="#pmo-problem">The Problem</a>
+  <a href="#pmo-agents">Three Agents</a>
+  <a href="#pmo-domain-packs">Domain Packs</a>
+  <a href="#pmo-deployment">Deployment Models</a>
+  <a href="#pmo-humans-vs-ai">Humans vs AI</a>
+  <a href="#pmo-integration">Enterprise Integration</a>
+</div>
+
+<!-- Problem section -->
+<div class="cols-2" id="pmo-problem" style="margin-top: 2rem;">
+  <div>
+    <span class="eyebrow">The Problem</span>
+    <h3 style="margin-bottom: 1rem;">Traditional PMO Models Are Broken</h3>
+    <ul style="color: var(--color-ink-secondary); line-height: 2;">
+      <li>70% of large projects overrun budget or schedule</li>
+      <li>PMO overhead can consume 10–15% of project budget</li>
+      <li>Most risks are discovered after they've materialised</li>
+      <li>Knowledge lives in heads, not systems — lost when people leave</li>
+    </ul>
+    <p style="color: var(--color-ink-secondary); margin-top: 1.5rem;">
+      The traditional model needs 10–20-person PMO teams to manually track tasks, update status, chase stakeholders, and produce reports. And they still miss what matters.
+    </p>
+  </div>
+  <div>
+    <div class="phase-card">
+      <h3>What Agentic PMO Changes</h3>
+      <p style="margin-top: 0.5rem;">Three AI agents — Plan, Monitor, Alert — each specialised, each reading industry-specific domain packs. A 3-person team (PM + 2 domain experts) does the work of a 10+ person PMO.</p>
+      <ul style="margin-top: 1rem; color: var(--color-ink-secondary); line-height: 2;">
+        <li><strong>Cost reduction:</strong> 60–70% on PMO overhead</li>
+        <li><strong>Scope gaps caught automatically</strong> before they become delays</li>
+        <li><strong>Risks flagged in real time</strong> — not at monthly review</li>
+        <li><strong>Knowledge captured in domain packs</strong> — institutional memory that doesn't walk out the door</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Stats bar -->
+<div class="section section-dark" style="padding: 2rem 0; margin: 2rem 0;">
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="num">70%</div>
+      <div class="label">Projects Overrun</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">10→3</div>
+      <div class="label">Team Size Reduction</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">4</div>
+      <div class="label">Domain Packs Ready</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">8–12</div>
+      <div class="label">Days to Integrate</div>
+    </div>
+  </div>
+</div>
+
+<!-- Three Agents -->
+<div id="pmo-agents">
+  <span class="eyebrow text-center">The Three Agents</span>
+  <h3 class="section-title text-center">Plan · Monitor · Alert</h3>
+  <p class="section-subtitle text-center">Three specialised AI agents — each with a distinct job, sharing the same domain knowledge.</p>
+
+  <div class="card-grid card-grid-3">
+    <div class="card">
+      <div class="card-icon">🧠</div>
+      <h3>Plan Agent — The Architect</h3>
+      <p>Takes a project brief + domain pack → generates 100+ tasks across 8 phases with milestones, dependencies, and discipline assignments. Catches scope gaps automatically: "You have tasks for gasifier procurement but nothing for biomass storage yard."</p>
+      <div class="phase-card" style="margin-top: 1rem;">
+        <p style="font-size: 0.85rem;"><strong>Uses an LLM</strong> — your choice of provider (OpenAI, Anthropic, OpenRouter). Falls back to template plans if no LLM key is configured.</p>
       </div>
-      <div class="card card-dark">
-        <div class="card-icon">⚙️</div>
-        <h3>How It Works</h3>
-        <p>
-          Every engagement begins with the 10-dimension maturity diagnostic to establish baselines and identify gaps. Domain packs are then configured — each containing WBS, risk register, KPIs, governance checklist, and delivery milestones. AI agents handle repetitive coordination, reporting, and monitoring, freeing leadership for strategic decisions. A unified dashboard provides real-time visibility across all active workstreams.
-        </p>
+    </div>
+    <div class="card card-dark">
+      <div class="card-icon">👁️</div>
+      <h3>Monitor Agent — The Inspector</h3>
+      <p>Runs <strong>deterministic checks</strong> — no LLM required (fast, predictable, auditable). Reads monitoring rules from the domain pack, runs weekly or on-demand, flags drift from plan, delays, missing deliverables, and risk triggers before they escalate.</p>
+      <div class="phase-card" style="margin-top: 1rem; background: rgba(255,255,255,0.1); border-color: transparent;">
+        <p style="font-size: 0.85rem; color: rgba(255,255,255,0.85);"><strong>Example rule:</strong> "If HAZOP close-out < 80% and 4 weeks since completion → flag as critical"</p>
       </div>
-      <div class="card card-dark">
-        <div class="card-icon">🎯</div>
-        <h3>Why It Matters</h3>
-        <p>
-          Traditional PMOs are document-heavy, reactive, and disconnected from strategic AI readiness. Agentic PMO is proactive, measurable, and embedded in the AI-native operating model from day one. It delivers transparency, accountability, and acceleration — turning strategy into governed execution at speed.
-        </p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔔</div>
+      <h3>Alert Agent — The Watchdog</h3>
+      <p>Reviews anomalies detected by the Monitor Agent, escalates based on severity (info → warning → critical), cross-references against the risk register for recommended actions. Resolved alerts are logged for a complete audit trail.</p>
+      <div class="phase-card" style="margin-top: 1rem;">
+        <p style="font-size: 0.85rem;"><strong>Hybrid design:</strong> Plan + Alert use LLMs (creative work). Monitor is rule-based (zero LLM cost). Critical checks are always fast and predictable.</p>
       </div>
-      <div class="card">
-        <div class="card-icon">📈</div>
-        <h3>What You Get</h3>
-        <p>
-          · Domain-configured project packs for your sector<br>
-          · AI-native maturity baseline + gap analysis<br>
-          · Risk, KPI, and governance tracking across all streams<br>
-          · Real-time dashboards with automated reporting<br>
-          · 90-day delivery milestones with partner-led implementation
-        </p>
-        <div style="margin-top:1rem;">
-          <a href="#contact" class="btn btn-gold btn-sm">Enquire About Agentic PMO →</a>
+    </div>
+  </div>
+</div>
+
+<!-- Domain Packs -->
+<div class="section" id="pmo-domain-packs" style="padding-bottom: 0;">
+  <div class="container" style="padding: 0;">
+    <span class="eyebrow text-center">The Intelligence Layer</span>
+    <h3 class="section-title text-center">Domain Packs — Pre-Built Industry Knowledge</h3>
+    <p class="section-subtitle text-center">A domain pack is a folder of JSON and Markdown files. No database, no special tooling — edit in any text editor. Agents read the pack to know what to look for in your specific industry.</p>
+
+    <div class="cols-2">
+      <div>
+        <div class="card">
+          <h3>What's Inside a Pack</h3>
+          <ul style="margin-top: 0.75rem; color: var(--color-ink-secondary); line-height: 2.2;">
+            <li><strong>WBS template</strong> — 80–165 tasks per pack across 8 phases</li>
+            <li><strong>Risk register</strong> — 40–88 risks with owner roles, early warning signals, mitigation, contingency</li>
+            <li><strong>Monitoring rules</strong> — 25–40 rules with severity, thresholds, and escalation paths</li>
+            <li><strong>KPI definitions</strong> — 25–40 KPIs tied to project outcomes</li>
+            <li><strong>Procurement, permitting &amp; commissioning checklists</strong> — 30+ items each</li>
+            <li><strong>Agent context</strong> — domain knowledge that teaches the agents what matters</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="card card-dark">
+          <h3>Packs Available Today</h3>
+          <table style="width: 100%; margin-top: 0.75rem; border-collapse: collapse;">
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);">
+              <td style="padding: 0.6rem 0;"><strong>EPC Capital Projects</strong></td>
+              <td style="padding: 0.6rem 0; text-align: right; font-size: 0.85rem;">165 tasks · 85 risks · 40 KPIs</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);">
+              <td style="padding: 0.6rem 0;"><strong>Industry 4.0 Smart Manufacturing</strong></td>
+              <td style="padding: 0.6rem 0; text-align: right; font-size: 0.85rem;">92 tasks · 41 risks · 26 KPIs</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);">
+              <td style="padding: 0.6rem 0;"><strong>Green Methanol (Biomass Gasification)</strong></td>
+              <td style="padding: 0.6rem 0; text-align: right; font-size: 0.85rem;">104 tasks · 59 risks · 24 KPIs</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 0;"><strong>SAF Biomass FT</strong></td>
+              <td style="padding: 0.6rem 0; text-align: right; font-size: 0.85rem;">131 tasks · 88 risks · 32 KPIs</td>
+            </tr>
+          </table>
+          <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">New packs created in 2–3 days with one subject-matter expert.</p>
+        </div>
+        <div class="phase-card" style="margin-top: 1rem;">
+          <h4>How Agents Use Domain Packs</h4>
+          <ol style="margin-top: 0.5rem; color: var(--color-ink-secondary); line-height: 2;">
+            <li>When you apply a template, the project gets tagged with the pack ID</li>
+            <li>Plan Agent loads WBS + agent context to understand lifecycle, disciplines, and pitfalls</li>
+            <li>Monitor Agent loads monitoring rules and runs each trigger against live project data</li>
+            <li>Alert Agent cross-references anomalies against the risk register for recommended actions</li>
+          </ol>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<!-- Workflow -->
+<div class="section" id="pmo-workflow" style="padding-bottom: 0;">
+  <div class="container" style="padding: 0;">
+    <span class="eyebrow text-center">From Brief to Execution</span>
+    <h3 class="section-title text-center">How It Works — 5 Steps</h3>
+    <p class="section-subtitle text-center">From project brief to active monitoring in 3 clicks.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem;">
+      <div class="card text-center">
+        <div class="card-icon">📝</div>
+        <h4 style="font-family: var(--font-sans); font-size: 0.9rem;">1. Create Project</h4>
+        <p style="font-size: 0.82rem;">Define a brief goal and scope</p>
+      </div>
+      <div class="card card-dark text-center">
+        <div class="card-icon">📦</div>
+        <h4 style="font-family: var(--font-sans); font-size: 0.9rem;">2. Apply Template</h4>
+        <p style="font-size: 0.82rem;">Choose a domain pack — 90% of your WBS is pre-built</p>
+      </div>
+      <div class="card text-center">
+        <div class="card-icon">🧠</div>
+        <h4 style="font-family: var(--font-sans); font-size: 0.9rem;">3. Run Plan Agent</h4>
+        <p style="font-size: 0.82rem;">Review and adjust with engineers</p>
+      </div>
+      <div class="card card-dark text-center">
+        <div class="card-icon">👁️</div>
+        <h4 style="font-family: var(--font-sans); font-size: 0.9rem;">4. Monitor Weekly</h4>
+        <p style="font-size: 0.82rem;">Deterministic checks against domain rules</p>
+      </div>
+      <div class="card text-center">
+        <div class="card-icon">🔔</div>
+        <h4 style="font-family: var(--font-sans); font-size: 0.9rem;">5. Alert Watches</h4>
+        <p style="font-size: 0.82rem;">Background escalation when thresholds breached</p>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 1.5rem; color: var(--color-ink-secondary); font-size: 0.9rem;">
+      Agents don't replace the project team — they augment. The PM still reviews, adjusts, and approves. But the agent does the busywork of generation, comparison, and flagging.
+    </p>
+  </div>
+</div>
+
+<!-- Deployment Models -->
+<div class="section" id="pmo-deployment" style="padding-bottom: 0;">
+  <div class="container" style="padding: 0;">
+    <span class="eyebrow text-center">Two Deployment Models</span>
+    <h3 class="section-title text-center">Standalone or Intelligence Layer</h3>
+    <p class="section-subtitle text-center">Agentic PMO adapts to your project scale — no forced migration, no rip-and-replace.</p>
+
+    <div class="cols-2">
+      <div class="card">
+        <h3>Model A — Standalone</h3>
+        <p style="color: var(--color-teal); font-family: var(--font-serif); font-size: 0.95rem; font-style: italic; margin: 0.5rem 0 1rem;">For small to medium projects</p>
+        <p style="color: var(--color-ink-secondary); margin-bottom: 1rem;">Agentic PMO <em>is</em> your primary project management tool. The Plan Agent generates the full WBS, the Kanban board tracks execution, and the Monitor Agent runs weekly checks. Works with any document repository — Google Drive, SharePoint, Dropbox, or a CDE like Autodesk Docs.</p>
+        <div class="phase-card">
+          <p><strong>Best for:</strong> Plant expansions, retrofit projects, pilot plants, green fuel feasibility studies, Industry 4.0 engagements — 12 to 24 month projects.</p>
+        </div>
+      </div>
+      <div class="card card-dark">
+        <h3>Model B — Intelligence Layer</h3>
+        <p style="color: var(--color-gold); font-family: var(--font-serif); font-size: 0.95rem; font-style: italic; margin: 0.5rem 0 1rem;">For large capital projects</p>
+        <p style="margin-bottom: 1rem;">Your organisation already runs Primavera P6 or MS Project. Agentic PMO sits <em>alongside</em> these as an intelligence layer — connected via a custom-built integration layer. No migration needed. No data duplication.</p>
+        <div style="font-size: 0.9rem; line-height: 1.8;">
+          <p><strong>Agentic PMO handles:</strong> Domain WBS generation, risk flagging, monitoring rules, KPI tracking, scope gap detection, compliance checks, AI-driven risk escalation</p>
+          <p style="margin-top: 0.5rem;"><strong>Your tools remain:</strong> Primavera P6 / MS Project (schedule of record), CDE/DMS (document repository), ERP (budget of record)</p>
+        </div>
+        <div class="phase-card" style="margin-top: 1rem; background: rgba(255,255,255,0.1); border-color: transparent;">
+          <p style="font-size: 0.85rem;"><strong>Best for:</strong> Greenfield EPC plants, large infrastructure projects, multi-year capital programmes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Humans vs AI -->
+<div class="section" id="pmo-humans-vs-ai" style="padding-bottom: 0;">
+  <div class="container" style="padding: 0;">
+    <span class="eyebrow text-center">Human + AI Partnership</span>
+    <h3 class="section-title text-center">Humans Lead. AI Executes.</h3>
+    <p class="section-subtitle text-center">Humans do what humans are best at. AI does what AI is best at. The result: a 3-person team does the work of a 10+ person PMO.</p>
+
+    <div class="cols-2">
+      <div>
+        <div class="card">
+          <h3>🧑 Humans Handle</h3>
+          <ul style="margin-top: 0.75rem; color: var(--color-ink-secondary); line-height: 2.2;">
+            <li>Stakeholder relationships and trust</li>
+            <li>Qualitative judgement and trade-off decisions</li>
+            <li>Creative problem solving</li>
+            <li>Negotiation and conflict resolution</li>
+            <li>Context — understanding the "why" behind the plan</li>
+            <li>Escalation decisions (when to pause, pivot, or cancel)</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="card card-dark">
+          <h3>🤖 AI Agents Handle</h3>
+          <ul style="margin-top: 0.75rem; line-height: 2.2;">
+            <li>Generating 100+ WBS tasks from a brief (hours → minutes)</li>
+            <li>Comparing actual vs. planned across every task, every week</li>
+            <li>Scanning risk registers for triggered conditions</li>
+            <li>Flagging missing documents, late permits, unclosed actions</li>
+            <li>Producing status reports and RAID logs</li>
+            <li>Sending notifications and escalation emails</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-dark" style="padding: 2rem; margin-top: 2rem;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div>
+          <h4 style="color: var(--color-gold); margin-bottom: 0.75rem;">Traditional PMO (10–14 People)</h4>
+          <table style="width: 100%; font-size: 0.85rem; border-collapse: collapse;">
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);"><td style="padding: 0.4rem 0;">PMO Director</td><td style="text-align: right;">1</td></tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);"><td style="padding: 0.4rem 0;">Project Coordinators</td><td style="text-align: right;">3–4</td></tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);"><td style="padding: 0.4rem 0;">Schedulers / Planners</td><td style="text-align: right;">2–3</td></tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);"><td style="padding: 0.4rem 0;">Risk Managers</td><td style="text-align: right;">1–2</td></tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);"><td style="padding: 0.4rem 0;">Report Writers</td><td style="text-align: right;">1–2</td></tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);"><td style="padding: 0.4rem 0;">Document Controllers</td><td style="text-align: right;">1–2</td></tr>
+            <tr><td style="padding: 0.4rem 0;">IT Operations</td><td style="text-align: right;">1</td></tr>
+            <tr style="font-weight: 700;"><td style="padding: 0.6rem 0 0;">Total</td><td style="text-align: right; padding: 0.6rem 0 0;">10–14</td></tr>
+          </table>
+        </div>
+        <div>
+          <h4 style="color: var(--color-gold); margin-bottom: 0.75rem;">Agentic PMO (3–4 People)</h4>
+          <table style="width: 100%; font-size: 0.85rem; border-collapse: collapse;">
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);"><td style="padding: 0.4rem 0;">PM / Lead</td><td style="text-align: right;">1</td></tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);"><td style="padding: 0.4rem 0;">Coordination</td><td style="text-align: right; color: var(--color-gold);">N8N automates</td></tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);"><td style="padding: 0.4rem 0;">Scheduling</td><td style="text-align: right; color: var(--color-gold);">Plan Agent + PM</td></tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);"><td style="padding: 0.4rem 0;">Risk Management</td><td style="text-align: right; color: var(--color-gold);">Monitor + Alert</td></tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);"><td style="padding: 0.4rem 0;">Reporting</td><td style="text-align: right; color: var(--color-gold);">N8N generates</td></tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);"><td style="padding: 0.4rem 0;">Document Control</td><td style="text-align: right; color: var(--color-gold);">CDE/DMS handles</td></tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);"><td style="padding: 0.4rem 0;">AI Agent Mgmt</td><td style="text-align: right; color: var(--color-gold);">Paperclip</td></tr>
+            <tr><td style="padding: 0.4rem 0;">IT Operations</td><td style="text-align: right; color: var(--color-gold);">Uptime Kuma</td></tr>
+            <tr style="font-weight: 700;"><td style="padding: 0.6rem 0 0;">Total</td><td style="text-align: right; padding: 0.6rem 0 0; color: var(--color-gold);">3–4</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Enterprise Integration -->
+<div class="section" id="pmo-integration" style="padding-bottom: 0;">
+  <div class="container" style="padding: 0;">
+    <span class="eyebrow text-center">Enterprise Integration</span>
+    <h3 class="section-title text-center">Custom-Built, Not Off-the-Shelf</h3>
+    <p class="section-subtitle text-center">REST API-first design. We don't sell a pre-built "Primavera connector." We bring our API and build the integration layer that fits your specific stack — in days, not months.</p>
+
+    <div class="cols-2">
+      <div>
+        <div class="card">
+          <h3>What Agentic PMO Exposes Today</h3>
+          <ul style="margin-top: 0.75rem; color: var(--color-ink-secondary); line-height: 2.2;">
+            <li><strong>Full REST API</strong> — CRUD for projects, tasks, milestones, agents, dashboards — all accessible via HTTP</li>
+            <li><strong>Webhook subscriptions</strong> — push alerts and monitoring results to Slack, Teams, email, or custom endpoints</li>
+            <li><strong>Import/export</strong> — domain pack templates exportable as JSON/CSV for any planning tool</li>
+          </ul>
+        </div>
+        <div class="phase-card" style="margin-top: 1rem;">
+          <h4>Integration Pattern</h4>
+          <pre style="font-size: 0.75rem; line-height: 1.5; margin-top: 0.5rem; overflow-x: auto; white-space: pre; background: #f8f6f2; padding: 0.75rem; color: var(--color-ink-secondary);">
+Your Stack          Integration Layer      Agentic PMO
+Primavera P6   ──▶  Sync Engine      ──▶  REST API
+MS Project     ──▶  (custom Python)  ──▶  Monitor Agent
+CDE / DMS      ──▶  Reads schedule   ──▶  Alert Agent
+ERP / Cost     ──▶  Transforms data      Webhooks ──▶
+              Pushes to PMO          Slack/Teams
+          </pre>
+        </div>
+      </div>
+      <div>
+        <div class="card card-dark">
+          <h3>Why Custom-Built Is the Right Approach</h3>
+          <ul style="margin-top: 0.75rem; line-height: 2.2;">
+            <li>Every enterprise runs Primavera differently — custom fields, unique workflows, specific permissions</li>
+            <li>Your sync cadence, conflict resolution rules, and data mappings are unique to your project</li>
+            <li>A custom connector takes <strong>8–12 days</strong> to build and deploy — faster than adapting a generic one</li>
+            <li>Built with our AI coding tools — testable against your live environment from day one</li>
+            <li><strong>No architectural changes</strong> needed to Agentic PMO — the sync engine is a standalone Python service running on cron</li>
+          </ul>
+        </div>
+        <div class="phase-card" style="margin-top: 1rem;">
+          <h4>Security &amp; Data Flow</h4>
+          <ul style="margin-top: 0.5rem; color: var(--color-ink-secondary); line-height: 2;">
+            <li><strong>No vendor cloud.</strong> Runs on your infrastructure — VPS, on-prem, or your cloud account</li>
+            <li><strong>Documents never leave your CDE.</strong> Metadata only — no downloading drawings or specs</li>
+            <li><strong>LLM data stays minimal.</strong> Task titles, descriptions, and domain pack rules only — no PII, no financial data</li>
+            <li><strong>Integration layer runs inside your network.</strong> The sync engine connects from your infrastructure to your tools</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Live Demo -->
+<div class="section" id="pmo-demo">
+  <div class="container" style="padding: 0;">
+    <span class="eyebrow text-center">See It in Action</span>
+    <h3 class="section-title text-center">Live Demo With Real Data</h3>
+    <p class="section-subtitle text-center">The Gujarat Green Methanol Plant — a fully populated EPC demo project running on Agentic PMO.</p>
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="num">52</div>
+        <div class="label">Tasks</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">5</div>
+        <div class="label">Milestones</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">6</div>
+        <div class="label">Active Risks</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">5</div>
+        <div class="label">Active Alerts</div>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 1.5rem; color: var(--color-ink-secondary); font-size: 0.9rem;">
+      Demo generated in 30 seconds. Apply the EPC domain pack, populate with demo data, run Monitor + Alert agents — and see real alerts, risks, and KPIs in your dashboard.
+    </p>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="text-center" style="margin-top: 2rem;">
+  <a href="#contact" class="btn btn-gold">Enquire About Agentic PMO →</a>
+  <a href="https://agenticpmo.tech" target="_blank" rel="noopener" class="btn btn-outline" style="margin-left: 0.75rem;">Log In at agenticpmo.tech</a>
+</div>
+</div>
 </section>
 
 <!-- The Framework -->
