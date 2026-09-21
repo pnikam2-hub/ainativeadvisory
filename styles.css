@@ -296,13 +296,38 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   color: rgba(255,255,255,0.8);
   padding: 3rem 0 1.5rem;
 }
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
 .footer-logo { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 700; color: #fff; display: block; margin-bottom: 0.75rem; }
 .footer-brand p { font-size: 0.85rem; line-height: 1.6; }
 .footer-col h4 { font-family: var(--font-sans); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-gold); margin-bottom: 0.75rem; }
 .footer-col a { display: block; font-size: 0.85rem; color: rgba(255,255,255,0.7); padding: 0.25rem 0; }
 .footer-col a:hover { color: var(--color-gold); }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; font-size: 0.8rem; text-align: center; color: rgba(255,255,255,0.5); }
+
+/* Founders / team cards */
+.founder-card { text-align: center; }
+.founder-avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--color-teal);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.founder-role {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--color-teal);
+  margin-bottom: 0.6rem;
+}
+.founder-links { margin-top: 1.25rem; }
 
 /* Responsive */
 @media (max-width: 900px) {
