@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Utility pages and repo documentation — no search value, keep them out of the index
+Disallow: /integration-tool
+Disallow: /integration-tool.html
+Disallow: /integration-questionnaire
+Disallow: /integration-questionnaire.html
+Disallow: /README.md
+
+Sitemap: https://ainativeadvisory.co.uk/sitemap.xml
