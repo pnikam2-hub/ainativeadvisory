@@ -9,7 +9,9 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 # Repo documentation is in the publish root (publish = ".") — keep it out of the public site
+# force = true is required: without it Netlify serves the existing static file and never applies this rule
 [[redirects]]
   from = "/README.md"
   to = "/404.html"
   status = 404
+  force = true
