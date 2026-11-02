@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Secure AI Workflow Checklist for UK Service Businesses — AI Native Advisory</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="A practical checklist for UK service businesses adopting AI: ten processes worth reviewing, data-protection questions, human-review checkpoints, tool-selection criteria, a workflow test plan and a simple ROI template.">
+  <meta name="robots" content="index,follow">
+  <style>
+    .ck { max-width: 860px; margin: 0 auto; }
+    .ck-head { border-bottom: 2px solid var(--color-teal); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+    .ck-head .kicker { font-family: var(--font-serif); font-size: 0.8125rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-gold-ink); }
+    .ck-head h1 { font-size: 2.6rem; margin: 0.4rem 0 0.6rem; }
+    .ck-head p { color: var(--color-ink-secondary); font-size: 1.02rem; max-width: 640px; }
+    .ck-block { margin-bottom: 2.5rem; page-break-inside: avoid; }
+    .ck-block h2 { font-size: 1.5rem; display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.4rem; }
+    
+    .ck-block > p { font-size: 0.92rem; color: var(--color-ink-muted); margin-bottom: 0.9rem; }
+    .ck-list { list-style: none; border-top: 1px solid var(--color-slate-soft); }
+    .ck-list li { display: flex; gap: 0.75rem; align-items: flex-start; padding: 0.62rem 0; border-bottom: 1px solid var(--color-slate-soft); font-size: 0.93rem; color: var(--color-ink-secondary); }
+    .ck-list li .box { flex: 0 0 auto; width: 15px; height: 15px; border: 1.5px solid var(--color-teal); margin-top: 4px; }
+    .ck-list li strong { color: var(--color-ink); font-weight: 600; }
+    .ck-list li .note { display: block; font-size: 0.85rem; color: var(--color-ink-muted); margin-top: 0.15rem; }
+    .write-line { border-bottom: 1px solid var(--color-slate); height: 1.6rem; margin-top: 0.4rem; }
+    .calc { background: var(--color-cream); border: 1px solid var(--color-slate-soft); padding: 1.5rem; }
+    .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; }
+    .calc label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--color-ink); margin-bottom: 0.3rem; }
+    .calc input {
+      width: 100%; font-family: var(--font-sans); font-size: 0.95rem; padding: 0.5rem 0.65rem;
+      border: 1px solid var(--color-slate); background: #fff; border-radius: 0;
+    }
+    .calc input:focus { outline: 2px solid var(--color-teal); outline-offset: -1px; }
+    .calc-out { margin-top: 1.25rem; border-top: 1px solid var(--color-slate); padding-top: 1rem; }
+    .calc-out div { display: flex; justify-content: space-between; font-size: 0.92rem; padding: 0.3rem 0; }
+    .calc-out div.total { border-top: 1px solid var(--color-slate); margin-top: 0.5rem; padding-top: 0.6rem; font-weight: 700; font-size: 1rem; color: var(--color-teal); }
+    .calc .caption { font-size: 0.8125rem; color: var(--color-ink-muted); margin-top: 0.75rem; line-height: 1.6; }
+    .ck-foot { border-top: 1px solid var(--color-slate-soft); margin-top: 2.5rem; padding-top: 1.5rem; font-size: 0.88rem; color: var(--color-ink-secondary); }
+    @media (max-width: 900px) {
+      .ck-grid, .calc-grid { grid-template-columns: 1fr; }
+      .ck-head h1 { font-size: 2rem; }
+    }
+    @media print {
+      .site-nav, .site-footer, .no-print { display: none !important; }
+      body { background: #fff; font-size: 11pt; }
+      .section { padding: 0 !important; }
+      .ck-head h1 { font-size: 22pt; }
+      .ck-block { margin-bottom: 1.1rem; page-break-inside: auto; }
+      .ck-list li { padding: 0.3rem 0; font-size: 9.5pt; }
+      .ck-block h2 { font-size: 13pt; }
+      .calc input { border: none; border-bottom: 1px solid #999; }
+      .calc { page-break-inside: avoid; }
+      .calc-grid { grid-template-columns: 1fr 1fr !important; }
+      .ck-foot { font-size: 9pt; }
+      @page { size: A4; margin: 16mm; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class='nav-logo' href='/'>AI Native Advisory.</a>
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="https://ainativeorganisations.com" target="_blank" rel="noopener">Main Site</a>
+      <a href="/">Advisory</a>
+      <a href="/#agentic-pmo">Agentic PMO</a>
+      <a href="/sme.html">AI Operations</a>
+      <a href="https://agenticpmo.tech" target="_blank" rel="noopener">Platform ↗</a>
+      <a href="/#team">Founders</a>
+      <a href="/sme.html#audit-cta" class="btn btn-gold btn-sm">Book an Audit</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <div class="ck">
+
+      <div class="ck-head">
+        <div class="kicker">AI Native Advisory · AI Operations</div>
+        <h1>The Secure AI Workflow Checklist</h1>
+        <p>For UK service businesses with 1–50 staff. Use this before you buy a tool, and again before a workflow touches client data. Work through it with the person who owns the process, not just the person who owns the technology.</p>
+        <p class="no-print" style="margin-top:1rem;font-size:0.82rem;color:var(--color-ink-muted);">Print it (Ctrl/Cmd + P), save it as a PDF, or work through it on screen. The ROI template at the end calculates from your own numbers.</p>
+        <div class="no-print" style="margin-top:1.25rem;">
+          <a href="/secure-ai-workflow-checklist.pdf" download class="btn btn-gold">Download the PDF</a>
+          <a href="/sme.html#audit-cta" class="btn btn-outline" style="margin-left:0.6rem;">Book an AI Workflow Audit</a>
+        </div>
+      </div>
+
+      <!-- 1 -->
+      <div class="ck-block">
+        <h2>Ten processes worth reviewing</h2>
+        <p>Tick the ones that currently cost you time. Start with whichever produces the most lost revenue, not the most lost minutes.</p>
+        <ul class="ck-list">
+          <li><span class="box"></span><span><strong>Enquiry intake</strong> — calls, forms, email and messaging arriving in one place, with nothing falling between them</span></li>
+          <li><span class="box"></span><span><strong>First response and follow-up</strong> — how quickly a new enquiry hears back, and what happens on the second attempt</span></li>
+          <li><span class="box"></span><span><strong>Quoting and proposals</strong> — building them, and chasing the ones not yet accepted</span></li>
+          <li><span class="box"></span><span><strong>Client onboarding</strong> — contracts, documents, welcome information, account setup</span></li>
+          <li><span class="box"></span><span><strong>Booking and scheduling</strong> — including reminders, rescheduling and no-shows</span></li>
+          <li><span class="box"></span><span><strong>Document intake</strong> — receiving, naming, filing and extracting from client documents</span></li>
+          <li><span class="box"></span><span><strong>Meeting notes to actions</strong> — who promised what, by when, and where that record lives</span></li>
+          <li><span class="box"></span><span><strong>Reporting</strong> — the weekly or monthly pack you rebuild by hand</span></li>
+          <li><span class="box"></span><span><strong>Internal knowledge</strong> — repetitive questions answered from someone's memory</span></li>
+          <li><span class="box"></span><span><strong>Invoicing and credit control</strong> — reminders, statements and reconciliation</span></li>
+        </ul>
+      </div>
+
+      <!-- 2 -->
+      <div class="ck-block">
+        <h2>Data-protection questions to ask</h2>
+        <p>Answer all ten in writing before any workflow is switched on. “The supplier says it's compliant” is not an answer.</p>
+        <ul class="ck-list">
+          <li><span class="box"></span><span><strong>What personal data does the workflow touch?</strong> Names, contact details, health information, financial information, or anything about a client's own customers?</span></li>
+          <li><span class="box"></span><span><strong>Where does it go?</strong> Which provider, which region, and does it leave the UK/EEA?</span></li>
+          <li><span class="box"></span><span><strong>Is it used for training?</strong> Confirm in writing that your data is not used to train or improve a model.</span></li>
+          <li><span class="box"></span><span><strong>How long is it retained?</strong> By the model provider, by the workflow tool, and in your own systems.</span></li>
+          <li><span class="box"></span><span><strong>What is the lawful basis, and is it in your privacy notice?</strong> Most service businesses will rely on legitimate interests or contract — either way, it should be written down.</span></li>
+          <li><span class="box"></span><span><strong>Is there a data-processing agreement?</strong> With each supplier that touches personal data on your behalf.</span></li>
+          <li><span class="box"></span><span><strong>Who inside the business can see the data?</strong> Access per workflow, not per company.</span></li>
+          <li><span class="box"></span><span><strong>What is the deletion path?</strong> If a client asks for erasure, can you actually find and remove the record?</span></li>
+          <li><span class="box"></span><span><strong>What happens on vendor failure?</strong> Export, ownership, and how you get your data out.</span></li>
+          <li><span class="box"></span><span><strong>Are you processing special-category data?</strong> Health, safeguarding, or legal detail needs a higher bar — and often a human-only path.</span></li>
+        </ul>
+      </div>
+
+      <!-- 3 -->
+      <div class="ck-block">
+        <h2>Human-review checkpoints</h2>
+        <p>Write down the checkpoints, not the intention. Each line needs a named owner.</p>
+        <ul class="ck-list">
+          <li><span class="box"></span><span><strong>Outbound client communication</strong> — anything sent to a client is approved by a person before it leaves, until the workflow has a track record and you decide otherwise</span></li>
+          <li><span class="box"></span><span><strong>Pricing and commitments</strong> — no quote, discount, delivery date or contractual term is generated and sent unreviewed</span></li>
+          <li><span class="box"></span><span><strong>Professional judgement</strong> — clinical, legal, financial or technical advice is drafted at most, never concluded by a model</span></li>
+          <li><span class="box"></span><span><strong>Confidential or sensitive documents</strong> — reviewed before summarisation, or excluded from the workflow entirely</span></li>
+          <li><span class="box"></span><span><strong>Escalation route</strong> — the named person a workflow hands to when it is unsure, with a response time</span></li>
+          <li><span class="box"></span><span><strong>Kill switch</strong> — who can switch the workflow off, and how, without waiting for a supplier</span></li>
+        </ul>
+        <p style="margin-top:0.85rem;">Owner of checkpoints: <span class="write-line" style="display:inline-block;width:60%;"></span></p>
+      </div>
+
+      <!-- 4 -->
+      <div class="ck-block">
+        <h2>Tool-selection criteria</h2>
+        <p>Score each candidate against these. A tool that fails 3 or 4 will cost you more than it saves.</p>
+        <ul class="ck-list">
+          <li><span class="box"></span><span><strong>Fits the process you already run</strong> — minimal change to how the team works today</span></li>
+          <li><span class="box"></span><span><strong>Integrates with what you own</strong> — your inbox, CRM, calendar and telephony, without a middleware project</span></li>
+          <li><span class="box"></span><span><strong>Data terms you can live with</strong> — no training on your data, clear retention, UK/EEA processing where required</span></li>
+          <li><span class="box"></span><span><strong>Human-in-the-loop by default</strong> — approval steps are built in, not bolted on</span></li>
+          <li><span class="box"></span><span><strong>Auditable</strong> — you can see what it did, to which record, and when</span></li>
+          <li><span class="box"></span><span><strong>Portable</strong> — you can export your data, prompts and configuration and leave</span></li>
+          <li><span class="box"></span><span><strong>Priced per outcome you can measure</strong> — not just per seat per month</span></li>
+          <li><span class="box"></span><span><strong>Supportable by your team</strong> — someone in the business can operate it after week four</span></li>
+        </ul>
+        <p style="margin-top:0.85rem;">Tools shortlisted: <span class="write-line" style="display:inline-block;width:60%;"></span></p>
+      </div>
+
+      <!-- 5 -->
+      <div class="ck-block">
+        <h2>Workflow test checklist</h2>
+        <p>Run these before go-live, on real examples, with the team who will use it. Record pass or fail for each.</p>
+        <ul class="ck-list">
+          <li><span class="box"></span><span><strong>Happy path</strong> — a normal, complete case goes through correctly five times in a row</span></li>
+          <li><span class="box"></span><span><strong>Messy input</strong> — typos, forwarded emails, a photo of a form, a message in the wrong channel</span></li>
+          <li><span class="box"></span><span><strong>Missing information</strong> — the workflow asks rather than invents. Check for fabricated details specifically</span></li>
+          <li><span class="box"></span><span><strong>Duplicate and out-of-order events</strong> — the same enquiry arriving twice does not produce two responses</span></li>
+          <li><span class="box"></span><span><strong>Edge cases you already know about</strong> — the difficult client, the unusual job, the exception only one person handles</span></li>
+          <li><span class="box"></span><span><strong>Failure behaviour</strong> — if a tool is down or a key expires, the process falls back to something that works and someone is told</span></li>
+          <li><span class="box"></span><span><strong>Data check</strong> — inspect what actually left your systems, not what the vendor says left</span></li>
+          <li><span class="box"></span><span><strong>Handover test</strong> — a team member who did not build it runs it end-to-end from the manual alone</span></li>
+        </ul>
+      </div>
+
+      <!-- 6 -->
+      <div class="ck-block">
+        <h2>Simple ROI template</h2>
+        <p>Estimate honestly. If the numbers only work with optimistic inputs, the workflow is not ready.</p>
+
+        <div class="calc no-print-interactive">
+          <div class="calc-grid">
+            <div>
+              <label for="runs">Times this process runs per week</label>
+              <input id="runs" type="number" min="0" step="1" value="20" oninput="calcRoi()">
+            </div>
+            <div>
+              <label for="mins">Minutes spent per run today</label>
+              <input id="mins" type="number" min="0" step="1" value="15" oninput="calcRoi()">
+            </div>
+            <div>
+              <label for="cut">Share of that time saved (%)</label>
+              <input id="cut" type="number" min="0" max="100" step="5" value="50" oninput="calcRoi()">
+            </div>
+            <div>
+              <label for="rate">Fully-loaded hourly cost of the person doing it (£)</label>
+              <input id="rate" type="number" min="0" step="1" value="25" oninput="calcRoi()">
+            </div>
+            <div>
+              <label for="tool">Monthly tool cost (£)</label>
+              <input id="tool" type="number" min="0" step="1" value="60" oninput="calcRoi()">
+            </div>
+            <div>
+              <label for="build">One-off implementation cost (£)</label>
+              <input id="build" type="number" min="0" step="100" value="3000" oninput="calcRoi()">
+            </div>
+          </div>
+
+          <div class="calc-out" aria-live="polite">
+            <div><span>Hours saved per month</span><span id="out-hours">—</span></div>
+            <div><span>Value of time saved per month</span><span id="out-value">—</span></div>
+            <div><span>Monthly tool cost</span><span id="out-cost">—</span></div>
+            <div class="total"><span>Net monthly benefit</span><span id="out-net">—</span></div>
+            <div class="total" style="border-top:none;margin-top:0;padding-top:0.2rem;"><span>Payback on implementation</span><span id="out-payback">—</span></div>
+          </div>
+          <p class="caption">Assumes 4.33 weeks per month. Excludes revenue gained from faster response, which is usually the larger number and the harder one to prove. Use this to sanity-check a decision, not to forecast a return.</p>
+        </div>
+
+        <noscript>
+          <p style="font-size:0.9rem;color:var(--color-ink-secondary);">Work it by hand: (runs per week × minutes per run × % saved ÷ 60) × 4.33 = hours saved per month. Multiply by the loaded hourly cost, subtract the monthly tool cost, and divide the implementation cost by the net monthly benefit to get payback in months.</p>
+        </noscript>
+      </div>
+
+      <!-- Foot -->
+      <div class="ck-foot">
+        <p style="font-family:var(--font-serif);font-size:1.15rem;color:var(--color-teal);margin-bottom:0.5rem;">If you want a second opinion on your answers</p>
+        <p>We run a focused <strong>AI Workflow Audit</strong> for UK service businesses: current-state process map, opportunity assessment, prioritised roadmap, data and risk review, 90-day plan and a business case with estimated savings. <a href="/sme.html#audit-cta">Book an audit</a> or email <a href="mailto:hello@ainativeorganisations.com">hello@ainativeorganisations.com</a>.</p>
+        <p style="margin-top:0.85rem;font-size:0.8rem;color:var(--color-ink-muted);">AI Native Advisory · ainativeadvisory.co.uk · This checklist is general guidance, not legal advice. Data-protection decisions should be confirmed with your own adviser.</p>
+      </div>
+
+      <div class="text-center no-print" style="margin-top:2rem;">
+        <a href="/sme.html" class="btn btn-outline">Back to AI Operations</a>
+        <a href="/sme.html#audit-cta" class="btn btn-gold" style="margin-left:0.75rem;">Book an AI Workflow Audit</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">AI Native Advisory.</span>
+        <p>AI-native operating models for larger organisations, Agentic PMO for complex delivery, and practical AI workflows for UK service businesses.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="https://ainativeorganisations.com" target="_blank" rel="noopener">Main Site</a>
+        <a href="/">Advisory</a>
+        <a href="/#agentic-pmo">Agentic PMO</a>
+        <a href="https://agenticpmo.tech" target="_blank" rel="noopener">Platform ↗</a>
+      </div>
+      <div class="footer-col">
+        <h4>AI Operations</h4>
+        <a href="/sme.html">AI Operations Overview</a>
+        <a href="/sme.html#services-sme">AI Workflow Audit</a>
+        <a href="/sme.html#services-sme">Secure AI Workflow Sprint</a>
+        <a href="/sme.html#services-sme">AI Operations Retainer</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="/sme.html#audit-cta">Book an Audit</a>
+        <a href="mailto:hello@ainativeorganisations.com">hello@ainativeorganisations.com</a>
+        <a href="https://www.linkedin.com/in/prashant-nikam-new/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 AI Native Organisations. Advisory practice founded by Prashant Nikam with co-founders Alok Matta and Harbinder N. · hello@ainativeorganisations.com
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleNav() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+var WEEKS_PER_MONTH = 4.33;
+
+function money(n) {
+  return '£' + Math.round(n).toLocaleString('en-GB');
+}
+
+function num(id) {
+  var v = parseFloat(document.getElementById(id).value);
+  return isFinite(v) && v > 0 ? v : 0;
+}
+
+function calcRoi() {
+  var runs = num('runs');
+  var mins = num('mins');
+  var cut = Math.min(num('cut'), 100);
+  var rate = num('rate');
+  var tool = num('tool');
+  var build = num('build');
+
+  var hoursPerMonth = (runs * mins * (cut / 100) / 60) * WEEKS_PER_MONTH;
+  var value = hoursPerMonth * rate;
+  var net = value - tool;
+  var payback = net > 0 ? build / net : null;
+
+  document.getElementById('out-hours').textContent = hoursPerMonth.toFixed(1) + ' hrs';
+  document.getElementById('out-value').textContent = money(value);
+  document.getElementById('out-cost').textContent = money(tool);
+  document.getElementById('out-net').textContent = (net < 0 ? '-' : '') + money(Math.abs(net));
+  document.getElementById('out-payback').textContent = payback === null
+    ? 'No payback at these inputs'
+    : (payback <= 0 ? 'Immediate' : payback.toFixed(1) + ' months');
+}
+
+if (document.getElementById('runs')) { calcRoi(); }
+</script>
+</body>
+</html>

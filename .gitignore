@@ -1,2 +1,5 @@
 # Local Netlify folder
 .netlify
+
+# local design-inspection artifacts (never publish: Netlify serves the repo root)
+.taste-skill/
